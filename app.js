@@ -173,25 +173,134 @@ var mobiles = {
 };
 
 
-var mob= document.getElementById('mob')
-var mod = document.getElementById('models')
-var btn = document.getElementById("search")
-for(var keys in mobiles){
+var mob = document.getElementById('mob');
+var mod = document.getElementById('models');
+var res = document.getElementById('result');
+
+// Populate brands dropdown
+for (var keys in mobiles) {
     mob.innerHTML += `
-    <option vlaue='${keys}'>${keys}</option>
-    `
+        <option value="${keys}">${keys}</option>
+    `;
 }
-  function models() {
-        var selectedBrand = mob.value;
-        mod.innerHTML = `<option disabled selected value="">Select Model</option>`;
 
-        for (var model in mobiles[selectedBrand]) {
-            mod.innerHTML += `
-                <option value="${model}">${model}</option>
-            `;
-        }
+// Populate models dropdown based on selected brand
+function models() {
+    var selectedBrand = mob.value;
+    mod.innerHTML = `<option disabled selected value="">Select Model</option>`;
+    for (var model in mobiles[selectedBrand]) {
+        mod.innerHTML += `
+            <option value="${model}">${mobiles[selectedBrand][model].name}</option>
+        `;
     }
+}
 
-    function search(){
-        
+// Display selected model details
+function search() {
+    var selectedBrand = mob.value;
+    var selectedModel = mod.value;
+
+    if (selectedBrand && selectedModel) {
+        var details = mobiles[selectedBrand][selectedModel];
+        res.innerHTML = `
+            <h2>${details.fullName}</h2>
+            <p>${details.caption}</p>
+            <p><strong>Price:</strong> ${details.price}</p>
+            <p><strong>Category:</strong> ${details.category}</p>
+            <p><strong>Tags:</strong> ${details.Tags}</p>
+            <p><strong>Available Colors:</strong> ${details.color.join(", ")}</p>
+            <img src="${details.img}" alt="${details.name}" style="max-width: 100%; height: auto;">
+        `;
+    } else {
+        res.innerHTML = `<p>Please select a brand and model.</p>`;
     }
+}
+
+
+    // Mobiles Data Card 
+
+    const blogs = [
+        {
+          title: "",
+          description:
+            "Redmi Buds 6 Active Wireless Earbuds",
+          image: "./assets/card images/one.webp",
+          price: "Rs 4,649",
+        },
+        {
+          title: "",
+          description:
+            "Realme T100 Wireless Earbuds",
+            image: "./assets/card images/two.webp",
+          price: "Rs 4,999",
+        },
+        {
+          title: "",
+          description: "QCY T13 ANC 2",
+          image: "./assets/card images/three.webp",
+          price: "Rs 5,499",
+        },
+        {
+          title: "",
+          description:
+            "Realmi Buds T110",
+            image: "./assets/card images/four.jpeg",
+          price: "Rs 5,399",
+        },
+        {
+          title: "",
+          description:
+            "Xiaomi Redmi Buds 6 Lite",
+            image: "./assets/card images/five.jpeg",
+          price: "Rs 5,899",
+        },
+        {
+          title: "",
+          description: "Soundpeats True Wireless Earbuds Free 2 Classic",
+          image: "./assets/card images/six.webp",
+          price: "Rs 5,149",
+        },
+        {
+            title: "",
+            description: "Nothing Buds Pro 2",
+            image: "./assets/card images/seven.jpeg",
+            price: "Rs 13,999",
+          },
+          {
+            title: "",
+            description: "Anker R50i Earbuds",
+            image: "./assets/card images/eight.webp",
+            price: "Rs 4,999",
+          },
+      ];
+  
+      // Inject Blogs into the DOM
+      const blogContainer = document.getElementById("blogContainer");
+  
+      blogs.forEach((blog) => {
+        const blogElement = document.createElement("div");
+        blogElement.className =
+          "bg-white  border border-gray-200 rounded-sm sm:w-60 w-full h-[300px]";
+  
+        blogElement.innerHTML = `
+          <a href="#">
+            <img
+              class="rounded-t-lg h-[200px] sm:h-[120px] mx-auto mt-3 "
+              src="${blog.image}"
+              alt="${blog.title}"
+            />
+          </a>
+          <div class="p-5">
+            
+            <p class="font-normal text-gray-700 mb-3">
+              ${blog.description}
+            </p>
+            <p class="font-normal text-gray-700 mb-3">
+              <b>${blog.price}</b>
+            </p>
+            
+          </div>
+        `;
+        blogContainer.appendChild(blogElement);
+      });
+  
