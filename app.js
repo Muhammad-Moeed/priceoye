@@ -1,175 +1,160 @@
 var mobiles = {
-    Apple: {
-        iPhone13: {
-            name: "iPhone 13",
-            price: "$799",
-            fullName: "Apple iPhone 13 – 128GB",
-            category: "Smartphone",
-            caption: "The iPhone 13 comes with a powerful A15 Bionic chip, dual 12MP camera system, and 5G support, delivering a great all-round experience.",
-            Tags: "128GB, 5G, A15 Bionic, iOS, Dual Camera, Apple",
-            color: ["Black", "White", "Red", "Blue", "Pink"],
-            img: "https://www.apple.com/v/iphone-13/g/images/overview/hero/hero_iphone_13__e5llxydgx3uq_large.jpg",
-        },
-        iPhone14: {
-            name: "iPhone 14",
-            price: "$899",
-            fullName: "Apple iPhone 14 – 256GB",
-            category: "Smartphone",
-            caption: "The iPhone 14 offers an enhanced camera system, a new A16 Bionic chip, and improved battery life, perfect for a premium smartphone experience.",
-            Tags: "256GB, 5G, A16 Bionic, iOS, Dual Camera, Apple",
-            color: ["Midnight", "Starlight", "Purple", "Red", "Blue"],
-            img: "https://www.apple.com/v/iphone-14/g/images/overview/hero/hero_iphone_14__bfzchp2g3z6e_large.jpg",
-        },
-        iPhone15ProMax: {
-            name: "iPhone 15 Pro Max",
-            price: "$1099",
-            fullName: "Apple iPhone 15 Pro Max – 512GB",
-            category: "Smartphone",
-            caption: "The iPhone 15 Pro Max delivers an even more powerful experience with a titanium body, improved A17 chip, and an amazing 120Hz OLED display.",
-            Tags: "512GB, 5G, A17 Bionic, ProMotion Display, Titanium, Apple",
-            color: ["Titanium Gray", "Silver", "Gold", "Blue"],
-            img: "https://www.apple.com/v/iphone-15-pro/g/images/overview/hero/hero_iphone_15pro_max__e6pcf5a4a22u_large.jpg",
-        },
-        iPhoneSE2022: {
-            name: "iPhone SE 2022",
-            price: "$429",
-            fullName: "Apple iPhone SE 2022 – 64GB",
-            category: "Smartphone",
-            caption: "The iPhone SE 2022 offers an affordable iPhone experience with the same A15 Bionic chip as the iPhone 13, offering great value for money.",
-            Tags: "64GB, A15 Bionic, 5G, iOS, Apple",
-            color: ["Midnight", "Starlight", "Product Red"],
-            img: "https://www.apple.com/v/iphone-se/g/images/overview/hero/hero_iphone_se__d4x6fkw7mye2_large.jpg",
-        }
+  Apple: {
+    iPhone13: {
+      name: "iPhone 13",
+      price: "$799",
+      oldprice: "$810",
+      fullName: "Apple iPhone 13 – 128GB",
+      Tags: "128GB, 5G, A15 Bionic, iOS, Dual Camera, Apple",
+      color: ["Black", "White", "Red", "Blue", "Pink"],
+      img: "./assets/card images/mob1.jpeg",
     },
-    
-    Samsung: {
-        GalaxyS22: {
-            name: "Galaxy S22",
-            price: "$749",
-            fullName: "Samsung Galaxy S22 – 128GB",
-            category: "Smartphone",
-            caption: "The Samsung Galaxy S22 offers a smooth performance, a stunning AMOLED display, and a versatile triple camera setup for all your photography needs.",
-            Tags: "128GB, AMOLED Display, 5G, Triple Camera, Samsung",
-            color: ["Phantom Black", "Phantom White", "Green", "Pink Gold"],
-            img: "https://www.samsung.com/global/galaxy/galaxy-s22/_images/overview/01_hero.jpg",
-        },
-        GalaxyS23Ultra: {
-            name: "Galaxy S23 Ultra",
-            price: "$1399",
-            fullName: "Samsung Galaxy S23 Ultra – 256GB",
-            category: "Smartphone",
-            caption: "The Galaxy S23 Ultra offers the most advanced technology with a 200MP camera, Snapdragon 8 Gen 2, and a massive 6.8-inch AMOLED display.",
-            Tags: "256GB, 5G, 200MP Camera, AMOLED, Snapdragon 8 Gen 2, Samsung",
-            color: ["Phantom Black", "Phantom Silver", "Burgundy", "Green"],
-            img: "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s918bzlgins/gallery/in-galaxy-s23-ultra-front-385509078?$ORIGIN_PNG$",
-        },
-        GalaxyZFold5: {
-            name: "Galaxy Z Fold 5",
-            price: "$1799",
-            fullName: "Samsung Galaxy Z Fold 5 – 512GB",
-            category: "Foldable Smartphone",
-            caption: "The Samsung Galaxy Z Fold 5 is a foldable phone that combines the power of a tablet and smartphone, with a large inner display and a stunning outer screen.",
-            Tags: "512GB, Foldable, AMOLED, 5G, Samsung",
-            color: ["Phantom Black", "Cream", "Blue", "Graygreen"],
-            img: "https://www.samsung.com/global/galaxy/galaxy-z-fold5/_images/overview/hero.jpg",
-        },
-        GalaxyA54: {
-            name: "Galaxy A54",
-            price: "$450",
-            fullName: "Samsung Galaxy A54 – 128GB",
-            category: "Smartphone",
-            caption: "The Samsung Galaxy A54 provides a solid 5G experience with a 120Hz AMOLED display, a 50MP camera, and an affordable price tag.",
-            Tags: "128GB, AMOLED, 5G, 120Hz, Samsung",
-            color: ["Awesome Black", "Awesome White", "Awesome Purple", "Awesome Blue"],
-            img: "https://www.samsung.com/global/galaxy/galaxy-a54-5g/_images/overview/hero.jpg",
-        }
+    iPhone14: {
+      name: "iPhone 14",
+      price: "$899",
+      oldprice: "$910",
+      fullName: "Apple iPhone 14 – 256GB",
+      Tags: "256GB, 5G, A16 Bionic, iOS, Dual Camera, Apple",
+      color: ["Midnight", "Starlight", "Purple", "Red", "Blue"],
+      img: "./assets/card images/mob2.jpeg",
     },
-    
-    OnePlus: {
-        OnePlus9: {
-            name: "OnePlus 9",
-            price: "$729",
-            fullName: "OnePlus 9 – 128GB",
-            category: "Smartphone",
-            caption: "The OnePlus 9 combines a premium design, a high-refresh-rate AMOLED display, and fast charging capabilities, offering a balanced smartphone experience.",
-            Tags: "128GB, 5G, AMOLED, OnePlus, Hasselblad Camera",
-            color: ["Morning Mist", "Astral Black", "Winter Mist"],
-            img: "https://www.oneplus.com/content/dam/o2/oneplus/9/pro-landing/slider/OnePlus9-hero.jpg",
-        },
-        OnePlus10Pro: {
-            name: "OnePlus 10 Pro",
-            price: "$999",
-            fullName: "OnePlus 10 Pro – 256GB",
-            category: "Smartphone",
-            caption: "OnePlus 10 Pro features a Snapdragon 8 Gen 1 chip, a powerful 50MP triple camera system, and an immersive 120Hz AMOLED display.",
-            Tags: "256GB, 5G, AMOLED, Snapdragon 8 Gen 1, OnePlus",
-            color: ["Volcanic Black", "Emerald Forest", "Morning Mist"],
-            img: "https://www.oneplus.com/content/dam/o2/oneplus/10-pro-landing/hero/OnePlus-10-Pro-Hero.jpg",
-        },
-        OnePlus11: {
-            name: "OnePlus 11",
-            price: "$849",
-            fullName: "OnePlus 11 – 128GB",
-            category: "Smartphone",
-            caption: "OnePlus 11 comes with a flagship Snapdragon 8 Gen 2 processor, a 50MP main camera, and 120Hz AMOLED display for a smooth experience.",
-            Tags: "128GB, 5G, Snapdragon 8 Gen 2, AMOLED, OnePlus",
-            color: ["Titan Black", "Eternal Green"],
-            img: "https://www.oneplus.com/content/dam/o2/oneplus/11-landing/hero/OnePlus11-hero.jpg",
-        },
-        OnePlusNord2: {
-            name: "OnePlus Nord 2",
-            price: "$399",
-            fullName: "OnePlus Nord 2 – 128GB",
-            category: "Smartphone",
-            caption: "The OnePlus Nord 2 features a MediaTek Dimensity 1200-AI chipset, a 50MP camera, and a 6.43-inch AMOLED display, delivering great value for its price.",
-            Tags: "128GB, MediaTek Dimensity 1200, AMOLED, OnePlus",
-            color: ["Gray Sierra", "Blue Haze", "Green Wood"],
-            img: "https://www.oneplus.com/content/dam/o2/oneplus/nord-2-landing/hero/OnePlus-Nord-2-Hero.jpg",
-        }
+    iPhone15ProMax: {
+      name: "iPhone 15 Pro Max",
+      price: "$1099",
+      oldprice: "$1199",
+      fullName: "Apple iPhone 15 Pro Max – 512GB",
+      Tags: "512GB, 5G, A17 Bionic, ProMotion Display, Titanium, Apple",
+      color: ["Titanium Gray", "Silver", "Gold", "Blue"],
+      img: "./assets/card images/mob3.webp",
     },
-    
-    Xiaomi: {
-        Mi11: {
-            name: "Mi 11",
-            price: "$749",
-            fullName: "Xiaomi Mi 11 – 128GB",
-            category: "Smartphone",
-            caption: "Xiaomi Mi 11 offers a premium AMOLED display, Snapdragon 888 processor, and a versatile triple camera setup with 108MP primary lens.",
-            Tags: "128GB, 5G, Snapdragon 888, AMOLED, Xiaomi",
-            color: ["Horizon Blue", "Midnight Grey", "Cloud White"],
-            img: "https://www.mi.com/global/mi11/_images/overview/mi11_hero.jpg",
-        },
-        Mi12Pro: {
-            name: "Mi 12 Pro",
-            price: "$999",
-            fullName: "Xiaomi Mi 12 Pro – 256GB",
-            category: "Smartphone",
-            caption: "Xiaomi Mi 12 Pro brings a 6.73-inch AMOLED display, Snapdragon 8 Gen 1 chipset, and a 50MP quad-camera setup for a flagship experience.",
-            Tags: "256GB, Snapdragon 8 Gen 1, AMOLED, 50MP Camera, Xiaomi",
-            color: ["Nebula Blue", "Misty Gray", "Eclipse Black"],
-            img: "https://www.mi.com/global/mi12pro/_images/overview/mi12pro_hero.jpg",
-        },
-        RedmiNote12: {
-            name: "Redmi Note 12",
-            price: "$199",
-            fullName: "Xiaomi Redmi Note 12 – 64GB",
-            category: "Smartphone",
-            caption: "Redmi Note 12 offers a budget-friendly experience with a large 6.5-inch display, MediaTek Dimensity 700 chipset, and a 48MP camera.",
-            Tags: "64GB, 5G, MediaTek Dimensity, 48MP Camera, Xiaomi",
-            color: ["Onyx Gray", "Sapphire Blue", "Emerald Green"],
-            img: "https://www.mi.com/global/redminote12/_images/overview/redminote12_hero.jpg",
-        },
-        PocoF4: {
-            name: "Poco F4",
-            price: "$399",
-            fullName: "Poco F4 – 128GB",
-            category: "Smartphone",
-            caption: "The Poco F4 combines powerful performance with a 120Hz AMOLED display and Snapdragon 870 chipset, making it a great option for gamers.",
-            Tags: "128GB, Snapdragon 870, AMOLED, 5G, Poco",
-            color: ["Moonlight Silver", "Night Black", "Electric Blue"],
-            img: "https://www.mi.com/global/poco-f4/_images/overview/pocoF4_hero.jpg",
-        }
+    iPhoneSE2022: {
+      name: "iPhone SE 2022",
+      price: "$429",
+      oldprice: "$569",
+      fullName: "Apple iPhone SE 2022 – 64GB",
+      Tags: "64GB, A15 Bionic, 5G, iOS, Apple",
+      color: ["Midnight", "Starlight", "Product Red"],
+      img: "./assets/card images/mob4.jpeg",
     }
+  },
+
+  Samsung: {
+    GalaxyS22: {
+      name: "Galaxy S22",
+      price: "$749",
+      oldprice: "$815",
+      fullName: "Samsung Galaxy S22 – 128GB",
+      Tags: "128GB, AMOLED Display, 5G, Triple Camera, Samsung",
+      color: ["Phantom Black", "Phantom White", "Green", "Pink Gold"],
+      img: "./assets/card images/mob5.jpeg",
+    },
+    GalaxyS23Ultra: {
+      name: "Galaxy S23 Ultra",
+      price: "$1399",
+      oldprice: "$1454",
+      fullName: "Samsung Galaxy S23 Ultra – 256GB",
+      Tags: "256GB, 5G, 200MP Camera, AMOLED, Snapdragon 8 Gen 2, Samsung",
+      color: ["Phantom Black", "Phantom Silver", "Burgundy", "Green"],
+      img: "./assets/card images/mob6.webp",
+    },
+    GalaxyZFold5: {
+      name: "Galaxy Z Fold 5",
+      price: "$1799",
+      oldprice: "$1888",
+      fullName: "Samsung Galaxy Z Fold 5 – 512GB",
+      category: "Foldable Smar",
+      Tags: "512GB, Foldable, AMOLED, 5G, Samsung",
+      color: ["Phantom Black", "Cream", "Blue", "Graygreen"],
+      img: "./assets/card images/mob7.jpeg",
+    },
+    GalaxyA54: {
+      name: "Galaxy A54",
+      price: "$450",
+      oldprice: "$550",
+      fullName: "Samsung Galaxy A54 – 128GB",
+      Tags: "128GB, AMOLED, 5G, 120Hz, Samsung",
+      color: ["Awesome Black", "Awesome White", "Awesome Purple", "Awesome Blue"],
+      img: "./assets/card images/mob8.webp",
+    }
+  },
+
+  OnePlus: {
+    OnePlus9: {
+      name: "OnePlus 9",
+      price: "$729",
+      oldprice: "$990",
+      fullName: "OnePlus 9 – 128GB",
+      Tags: "128GB, 5G, AMOLED, OnePlus, Hasselblad Camera",
+      color: ["Morning Mist", "Astral Black", "Winter Mist"],
+      img: "./assets/card images/mob9.jpeg",
+    },
+    OnePlus10Pro: {
+      name: "OnePlus 10 Pro",
+      price: "$999",
+      oldprice: "$1000",
+      fullName: "OnePlus 10 Pro – 256GB",
+      Tags: "256GB, 5G, AMOLED, Snapdragon 8 Gen 1, OnePlus",
+      color: ["Volcanic Black", "Emerald Forest", "Morning Mist"],
+      img: "./assets/card images/mob10.webp",
+    },
+    OnePlus11: {
+      name: "OnePlus 11",
+      price: "$849",
+      oldprice: "$998",
+      fullName: "OnePlus 11 – 128GB",
+      Tags: "128GB, 5G, Snapdragon 8 Gen 2, AMOLED, OnePlus",
+      color: ["Titan Black", "Eternal Green"],
+      img: "./assets/card images/mob11.webp",
+    },
+    OnePlusNord2: {
+      name: "OnePlus Nord 2",
+      price: "$399",
+      oldprice: "$450",
+      fullName: "OnePlus Nord 2 – 128GB",
+      Tags: "128GB, MediaTek Dimensity 1200, AMOLED, OnePlus",
+      color: ["Gray Sierra", "Blue Haze", "Green Wood"],
+      img: "./assets/card images/mob12.jpeg",
+    }
+  },
+
+  Xiaomi: {
+    Mi11: {
+      name: "Mi 11",
+      price: "$749",
+      oldprice: "$999",
+      fullName: "Xiaomi Mi 11 – 128GB",
+      Tags: "128GB, 5G, Snapdragon 888, AMOLED, Xiaomi",
+      color: ["Horizon Blue", "Midnight Grey", "Cloud White"],
+      img: "./assets/card images/mob1.jpeg",
+    },
+    Mi12Pro: {
+      name: "Mi 12 Pro",
+      price: "$999",
+      oldprice: "$1199",
+      fullName: "Xiaomi Mi 12 Pro – 256GB",
+      Tags: "256GB, Snapdragon 8 Gen 1, AMOLED, 50MP Camera, Xiaomi",
+      color: ["Nebula Blue", "Misty Gray", "Eclipse Black"],
+      img: "./assets/card images/mob2.jpeg",
+    },
+    RedmiNote12: {
+      name: "Redmi Note 12",
+      price: "$199",
+      oldprice: "$240",
+      fullName: "Xiaomi Redmi Note 12 – 64GB",
+      Tags: "64GB, 5G, MediaTek Dimensity, 48MP Camera, Xiaomi",
+      color: ["Onyx Gray", "Sapphire Blue", "Emerald Green"],
+      img: "./assets/card images/mob3.webp",
+    },
+    PocoF4: {
+      name: "Poco F4",
+      price: "$399",
+      oldprice: "$500",
+      fullName: "Poco F4 – 128GB",
+      Tags: "128GB, Snapdragon 870, AMOLED, 5G, Poco",
+      color: ["Moonlight Silver", "Night Black", "Electric Blue"],
+      img: "./assets/card images/mob4.jpeg",
+    }
+  }
 };
 
 
@@ -177,112 +162,267 @@ var mob = document.getElementById('mob');
 var mod = document.getElementById('models');
 var res = document.getElementById('result');
 
-// Populate brands dropdown
+// brands dropdown
 for (var keys in mobiles) {
-    mob.innerHTML += `
+  mob.innerHTML += `
         <option value="${keys}">${keys}</option>
     `;
 }
 
-// Populate models dropdown based on selected brand
 function models() {
-    var selectedBrand = mob.value;
-    mod.innerHTML = `<option disabled selected value="">Select Model</option>`;
-    for (var model in mobiles[selectedBrand]) {
-        mod.innerHTML += `
+  var selectedBrand = mob.value;
+  mod.innerHTML = `<option disabled selected value="">Select Model</option>`;
+  for (var model in mobiles[selectedBrand]) {
+    mod.innerHTML += `
             <option value="${model}">${mobiles[selectedBrand][model].name}</option>
         `;
-    }
+  }
 }
 
 // Display selected model details
-function search() {
-    var selectedBrand = mob.value;
-    var selectedModel = mod.value;
 
-    if (selectedBrand && selectedModel) {
-        var details = mobiles[selectedBrand][selectedModel];
-        res.innerHTML = `
-            <h2>${details.fullName}</h2>
-            <p>${details.caption}</p>
-            <p><strong>Price:</strong> ${details.price}</p>
-            <p><strong>Category:</strong> ${details.category}</p>
-            <p><strong>Tags:</strong> ${details.Tags}</p>
-            <p><strong>Available Colors:</strong> ${details.color.join(", ")}</p>
-            <img src="${details.img}" alt="${details.name}" style="max-width: 100%; height: auto;">
-        `;
-    } else {
-        res.innerHTML = `<p>Please select a brand and model.</p>`;
-    }
+function search() {
+  var selectedBrand = mob.value;
+  var selectedModel = mod.value;
+
+  if (selectedBrand && selectedModel) {
+    var details = mobiles[selectedBrand][selectedModel];
+ 
+    res.innerHTML = `
+         <div class="mt-2 max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+   <div class="flex flex-col lg:flex-row">
+    <!-- Left Section -->
+    <div class="lg:w-1/2">
+     <div class="relative border-2 border-gray-300 py-3">
+      <img alt="${details.name}" class="w-full rounded-lg" height="400" src="${details.img}" width="400"/>
+      <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+       OFFICIAL ONLINE RETAILER
+      </div>
+     </div>
+     <div class="flex justify-center mt-4 space-x-2">
+      <img alt="Samsung Galaxy A05 Light Green Thumbnail" class="w-16 h-16 border rounded-lg" height="60" src="${details.img}" width="60"/>
+      <img alt="Samsung Galaxy A05 Black Thumbnail" class="w-16 h-16 border rounded-lg" height="60" src="${details.img}" width="60"/>
+      <img alt="Samsung Galaxy A05 Silver Thumbnail" class="w-16 h-16 border rounded-lg" height="60" src="${details.img}" width="60"/>
+      <img alt="Samsung Galaxy A05 Light Green Thumbnail" class="w-16 h-16 border rounded-lg" height="60" src="${details.img}" width="60"/>
+     </div>
+    </div>
+    <!-- Right Section -->
+    <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+     <h1 class="text-2xl font-bold">
+      ${details.fullName}
+     </h1>
+     <div class="flex items-center mt-2">
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star-half-alt">
+       </i>
+      </span>
+      <span class="ml-2 text-gray-600">
+       4.9
+      </span>
+      <span class="ml-2 text-gray-600">
+       279 Ratings
+      </span>
+     </div>
+     <div class="flex items-center mt-4">
+      <span class="text-green-600">
+       <i class="fas fa-check-circle">
+       </i>
+      </span>
+      <span class="ml-2 text-gray-600">
+       Priceoye Assured
+      </span>
+     </div>
+     <div class="mt-4">
+      <span class="text-3xl font-bold text-gray-800">
+       Rs ${details.price}
+      </span>
+      <span class="text-sm line-through text-gray-500 ml-2">
+       RS ${details.price}
+      </span>
+      <span class="text-sm text-green-600 ml-2">
+       16% OFF
+      </span>
+     </div>
+     <div class="mt-4">
+      <span class="text-gray-600">
+       Availability
+      </span>
+      <span class="ml-2 text-green-600">
+       In Stock
+      </span>
+      <p>${details.Tags}</p>
+     </div>
+     <div class="mt-4">
+      <span class="text-gray-600">
+       Colors
+      </span>
+      <div class="flex mt-2 space-x-2">
+       <div class="border rounded-lg p-2">
+        <span class="block text-center text-sm">
+         ${details.color[0]}
+        </span>
+       </div>
+       <div class="border rounded-lg p-2">
+        <span class="block text-center text-sm">
+         ${details.color[1]}
+        </span>
+       </div>
+       <div class="border rounded-lg p-2">
+        <span class="block text-center text-sm">
+         ${details.color[2]}
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="mt-4">
+      <span class="text-gray-600">
+       Storage
+      </span>
+      <div class="flex mt-2 space-x-2">
+       <button class="border rounded-lg px-4 py-2 text-sm">
+        64GB - 4GB RAM
+       </button>
+       <button class="border rounded-lg px-4 py-2 text-sm">
+        128GB - 4GB RAM
+       </button>
+       <button class="border rounded-lg px-4 py-2 text-sm">
+        128GB - 6GB RAM
+       </button>
+      </div>
+     </div>
+     <div class="mt-4">
+      <div class="border rounded-lg p-4">
+       <div class="flex items-center">
+        <input class="form-checkbox h-5 w-5 text-green-600" type="checkbox"/>
+        <span class="ml-2 text-gray-600">
+         1 Year Extended Warranty
+        </span>
+        <span class="ml-auto text-gray-600">
+         Cost: Rs 899
+        </span>
+       </div>
+       <p class="text-sm text-gray-500 mt-2">
+        With Priceoye Extended Warranty, your product is protected for an additional year.
+       </p>
+      </div>
+      <div class="border rounded-lg p-4 mt-4">
+       <div class="flex items-center">
+        <input class="form-checkbox h-5 w-5 text-green-600" type="checkbox"/>
+        <span class="ml-2 text-gray-600">
+         Insurance
+        </span>
+        <span class="ml-auto text-gray-600">
+         Cost: Rs 470
+        </span>
+       </div>
+       <p class="text-sm text-gray-500 mt-2">
+        Covers Theft, Loss and Upto 50% Screen Damage
+       </p>
+      </div>
+     </div>
+     <div class="mt-4">
+      <button class="w-full bg-orange-500 text-white py-2 rounded-lg">
+       Add to Cart
+      </button>
+      <button class="w-full bg-blue-500 text-white py-2 rounded-lg mt-2">
+       Compare
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+
+        `
+  } else {
+    document.getElementById('error').innerHTML = `<p>Please select a brand and model.</p>`;
+  }
 }
 
 
-    // Mobiles Data Card 
+// Mobiles Data Card 
 
-    const blogs = [
-        {
-          title: "",
-          description:
-            "Redmi Buds 6 Active Wireless Earbuds",
-          image: "./assets/card images/one.webp",
-          price: "Rs 4,649",
-        },
-        {
-          title: "",
-          description:
-            "Realme T100 Wireless Earbuds",
-            image: "./assets/card images/two.webp",
-          price: "Rs 4,999",
-        },
-        {
-          title: "",
-          description: "QCY T13 ANC 2",
-          image: "./assets/card images/three.webp",
-          price: "Rs 5,499",
-        },
-        {
-          title: "",
-          description:
-            "Realmi Buds T110",
-            image: "./assets/card images/four.jpeg",
-          price: "Rs 5,399",
-        },
-        {
-          title: "",
-          description:
-            "Xiaomi Redmi Buds 6 Lite",
-            image: "./assets/card images/five.jpeg",
-          price: "Rs 5,899",
-        },
-        {
-          title: "",
-          description: "Soundpeats True Wireless Earbuds Free 2 Classic",
-          image: "./assets/card images/six.webp",
-          price: "Rs 5,149",
-        },
-        {
-            title: "",
-            description: "Nothing Buds Pro 2",
-            image: "./assets/card images/seven.jpeg",
-            price: "Rs 13,999",
-          },
-          {
-            title: "",
-            description: "Anker R50i Earbuds",
-            image: "./assets/card images/eight.webp",
-            price: "Rs 4,999",
-          },
-      ];
-  
-      // Inject Blogs into the DOM
-      const blogContainer = document.getElementById("blogContainer");
-  
-      blogs.forEach((blog) => {
-        const blogElement = document.createElement("div");
-        blogElement.className =
-          "bg-white  border border-gray-200 rounded-sm sm:w-60 w-full h-[300px]";
-  
-        blogElement.innerHTML = `
+var blogs = [
+  {
+    title: "",
+    description:
+      "Redmi Buds 6 Active Wireless Earbuds",
+    image: "./assets/card images/one.webp",
+    price: "Rs 4,649",
+  },
+  {
+    title: "",
+    description:
+      "Realme T100 Wireless Earbuds",
+    image: "./assets/card images/two.webp",
+    price: "Rs 4,999",
+  },
+  {
+    title: "",
+    description: "QCY T13 ANC 2",
+    image: "./assets/card images/three.webp",
+    price: "Rs 5,499",
+  },
+  {
+    title: "",
+    description:
+      "Realmi Buds T110",
+    image: "./assets/card images/four.jpeg",
+    price: "Rs 5,399",
+  },
+  {
+    title: "",
+    description:
+      "Xiaomi Redmi Buds 6 Lite",
+    image: "./assets/card images/five.jpeg",
+    price: "Rs 5,899",
+  },
+  {
+    title: "",
+    description: "Soundpeats True Wireless Earbuds Free 2 Classic",
+    image: "./assets/card images/six.webp",
+    price: "Rs 5,149",
+  },
+  {
+    title: "",
+    description: "Nothing Buds Pro 2",
+    image: "./assets/card images/seven.jpeg",
+    price: "Rs 13,999",
+  },
+  {
+    title: "",
+    description: "Anker R50i Earbuds",
+    image: "./assets/card images/eight.webp",
+    price: "Rs 4,999",
+  },
+];
+
+// Inject Blogs into the DOM
+var blogContainer = document.getElementById("blogContainer");
+
+blogs.forEach((blog) => {
+  var blogElement = document.createElement("div");
+  blogElement.className =
+    "bg-white  border border-gray-200 rounded-sm sm:w-60 w-full h-[300px]";
+
+  blogElement.innerHTML = `
           <a href="#">
             <img
               class="rounded-t-lg h-[200px] sm:h-[120px] mx-auto mt-3 "
@@ -301,6 +441,20 @@ function search() {
             
           </div>
         `;
-        blogContainer.appendChild(blogElement);
-      });
-  
+  blogContainer.appendChild(blogElement);
+});
+
+
+
+// ***********Popup****************
+
+function closePopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+window.onload = () => {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'flex';
+};
+
